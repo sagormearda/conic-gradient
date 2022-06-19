@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient( rgb(0, 0, 255, .6), rgb(128, 128, 128, .9), rgb(255, 0, 0, .5) 55%, rgb(255, 105, 180, .3));
+    opacity: .9;
+}
+
+.container {
+    width: 80%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10%;
+    background-image: repeating-conic-gradient( yellow, black, skyblue);
+}
+
+p {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7 {
+    height: 150px;
+    width: 150px;
+    border: 1px dotted black;
+    margin: 20px;
+    box-shadow: 0px 0px 4px 3px black;
+}
+
+.box-1 {
+    background-image: conic-gradient( red, green, hotpink, yellow);
+}
+
+.box-2 {
+    background-image: conic-gradient( red 45deg, green 90deg, hotpink, teal 180deg);
+}
+
+.box-3 {
+    border-radius: 50%;
+    background-image: conic-gradient( red, green, yellow, hotpink);
+}
+
+.box-4 {
+    background-image: conic-gradient( red 0deg, red 90deg, green 90deg, green 180deg, blue 180deg, blue 270deg, yellow 270deg);
+    border-radius: 50%;
+}
+
+.box-5 {
+    border-radius: 50%;
+    background-image: repeating-conic-gradient(red 10%, yellow 20%, blue 30%);
+}
+
+.box-6 {
+    border-radius: 50%;
+    background-image: repeating-conic-gradient( red 0deg 10deg, yellow 10deg 20deg, blue 20deg 30deg);
+}
+
+.box-7 {
+    border-radius: 50%;
+    background-image: repeating-conic-gradient(at 30% 60%, red 0deg 10deg, green 10deg 20deg)
+}
